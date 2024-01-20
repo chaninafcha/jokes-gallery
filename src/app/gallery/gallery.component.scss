@@ -1,0 +1,39 @@
+/* gallery.component.css */
+
+.gallery-list {
+    width: 100%;
+    border: 1px solid #87CEEB; /* Light Blue border */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .mat-list-item {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .mat-list-item:hover {
+    background-color: #f0f0f0; /* Light Grey background on hover */
+  }
+  
+  .gallery-item {
+    padding: 16px;
+    border-bottom: 1px solid #87CEEB; /* Light Blue border between items */
+  }
+  
+  .gallery-item:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    margin: 0;
+    color: #333; /* Dark text color for better readability */
+  }
+  
+
+  .header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }

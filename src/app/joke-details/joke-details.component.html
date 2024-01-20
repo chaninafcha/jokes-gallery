@@ -1,0 +1,41 @@
+
+<h1 class="header">joke details</h1>
+<mat-dialog-content>
+<table class="joke-table">
+    <tr>
+      <th>Category</th>
+      <td>{{ data.joke.category }}</td>
+    </tr>
+    <tr>
+      <th>Setup</th>
+      <td>{{ data.joke.setup }}</td>
+    </tr>
+    <tr *ngIf="data.joke.type === 'twopart'">
+      <th>Delivery</th>
+      <td>{{ data.joke.delivery }}</td>
+    </tr>
+    <tr>
+      <th>Joke</th>
+      <td>{{ data.joke.joke }}</td>
+    </tr>
+    <tr>
+      <th>Flags</th>
+      <td>
+        <div *ngIf="data.joke.flags.nsfw">NSFW</div>
+        <div *ngIf="data.joke.flags.religious">Religious</div>
+        <div *ngIf="data.joke.flags.political">Political</div>
+        <div *ngIf="data.joke.flags.racist">Racist</div>
+        <div *ngIf="data.joke.flags.sexist">Sexist</div>
+      </td>
+    </tr>
+ <tr>   <b> another jokes - of type {{data.joke.type}}    </b>     </tr>
+  <tr *ngFor="let joke of suggestedJokes">
+   
+   <div *ngIf="data.joke.type=='twopart'" >{{joke.setup}}</div>
+   <div *ngIf="data.joke.type!='twopart'">{{joke.joke}}</div>
+   </tr>
+   
+
+  </table>
+</mat-dialog-content>
+  

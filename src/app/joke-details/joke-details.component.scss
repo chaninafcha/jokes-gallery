@@ -1,0 +1,35 @@
+/* joke-modal.component.css */
+.joke-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #2196F3; /* Material Blue for table header */
+    color: #fff; /* White text color for table header */
+  }
+  
+  div {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #FFC107; /* Material Yellow */
+    color: #333; /* Dark text color */
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  

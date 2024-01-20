@@ -1,0 +1,28 @@
+<!-- gallery.component.html -->
+<!-- <mat-card>
+    <mat-card-header>
+      <mat-card-title>Jokes Gallery</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let joke of jokes">
+          {{ joke.setup }}
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+   -->
+<!-- app.component.html -->
+<h1 class="header">Jokes Gallery</h1>
+<mat-selection-list class="gallery-list">
+    <mat-list-item *ngFor="let joke of jokes" ngClass="mat-list-item"  (click)="openJokeDetails(joke)" >
+      <div class="gallery-item" *ngIf="joke.type=='twopart'">
+        <h3>{{ joke.setup }}</h3>
+      </div>
+      <div class="gallery-item" *ngIf="joke.type=='single'">
+        <h3>{{ joke.joke }}</h3>
+      </div>
+    </mat-list-item>
+  </mat-selection-list>
+
+  

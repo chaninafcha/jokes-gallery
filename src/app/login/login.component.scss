@@ -1,0 +1,16 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .login-form {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
